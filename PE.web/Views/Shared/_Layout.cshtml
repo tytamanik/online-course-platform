@@ -1,0 +1,62 @@
+﻿@using System.Web.Optimization;
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Course Marketplace</title>
+
+    @Styles.Render("~/bundles/css")
+    @Scripts.Render("~/bundles/bootstrap/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/bundles/slick")
+    @Styles.Render("~/bundles/slick-theme")
+    @Styles.Render("~/bundles/feather")
+    @Styles.Render("~/bundles/font-awesome")
+    @Styles.Render("~/bundles/euclid-circulara")
+    @Styles.Render("~/bundles/swiper")
+    @Styles.Render("~/bundles/magnify")
+    @Styles.Render("~/bundles/odometer")
+    @Styles.Render("~/bundles/animation")
+    @Styles.Render("~/bundles/jquery-ui")
+    @Styles.Render("~/bundles/magnigy-popup")
+    @Styles.Render("~/bundles/style")
+
+</head>
+<body>
+    @Html.Partial("_NavigationBar")
+    @RenderBody()
+    @Html.Partial("_Footer")
+
+    @Scripts.Render("~/bundles/modernizr")
+    <!-- jQuery JS -->
+    @Scripts.Render("~/bundles/jquery")
+    <!-- Bootstrap JS -->
+    @Scripts.Render("~/bundles/bootstrap/css")
+    <!-- sal.js --> 
+    @Scripts.Render("~/bundles/sal")
+    @Scripts.Render("~/bundles/swiper")
+    @Scripts.Render("~/bundles/magnify")
+    @Scripts.Render("~/bundles/jquery-appear")
+    @Scripts.Render("~/bundles/odometer")
+    @Scripts.Render("~/bundles/backtotop")
+    @Scripts.Render("~/bundles/isotrop")
+    @Scripts.Render("~/bundles/imageloaded")
+
+
+    @Scripts.Render("~/bundles/wow")
+    @Scripts.Render("~/bundles/waypoint")
+    @Scripts.Render("~/bundles/easypie")
+    @Scripts.Render("~/bundles/text-type")
+    @Scripts.Render("~/bundles/jquery-one-page-nav")
+    @Scripts.Render("~/bundles/bootstrap-select")
+    @Scripts.Render("~/bundles/jquery-ui")
+    @Scripts.Render("~/bundles/magnify-popup")
+    @Scripts.Render("~/bundles/paralax-scroll")
+    @Scripts.Render("~/bundles/paralax")
+    @Scripts.Render("~/countdown")
+    <!-- Main JS -->
+    @Scripts.Render("~/bundles/main")
+</body>
+</html>
