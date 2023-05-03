@@ -1,0 +1,9 @@
+C:\Users\user\Documents\GitHub\online-course-platform\PE.Domain\bin\Debug\PE.Domain.dll
+C:\Users\user\Documents\GitHub\online-course-platform\PE.Domain\bin\Debug\PE.Domain.pdb
+C:\Users\user\Documents\GitHub\online-course-platform\PE.Domain\bin\Debug\PE.Helpers.dll
+C:\Users\user\Documents\GitHub\online-course-platform\PE.Domain\bin\Debug\PE.Helpers.pdb
+C:\Users\user\Documents\GitHub\online-course-platform\PE.Domain\obj\Debug\PE.Domain.csproj.AssemblyReference.cache
+C:\Users\user\Documents\GitHub\online-course-platform\PE.Domain\obj\Debug\PE.Domain.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\online-course-platform\PE.Domain\obj\Debug\PE.Domain.csproj.CopyComplete
+C:\Users\user\Documents\GitHub\online-course-platform\PE.Domain\obj\Debug\PE.Domain.dll
+C:\Users\user\Documents\GitHub\online-course-platform\PE.Domain\obj\Debug\PE.Domain.pdb

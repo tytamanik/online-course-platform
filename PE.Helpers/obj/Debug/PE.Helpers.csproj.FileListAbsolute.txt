@@ -1,0 +1,6 @@
+C:\Users\user\Documents\GitHub\online-course-platform\PE.Helpers\bin\Debug\PE.Helpers.dll
+C:\Users\user\Documents\GitHub\online-course-platform\PE.Helpers\bin\Debug\PE.Helpers.pdb
+C:\Users\user\Documents\GitHub\online-course-platform\PE.Helpers\obj\Debug\PE.Helpers.csproj.AssemblyReference.cache
+C:\Users\user\Documents\GitHub\online-course-platform\PE.Helpers\obj\Debug\PE.Helpers.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\online-course-platform\PE.Helpers\obj\Debug\PE.Helpers.dll
+C:\Users\user\Documents\GitHub\online-course-platform\PE.Helpers\obj\Debug\PE.Helpers.pdb

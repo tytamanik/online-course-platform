@@ -815,9 +815,11 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ULoginController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\UserLogin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -825,6 +827,7 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.6.3.slim.min.map" />
     <Content Include="Scripts\jquery-3.6.3.min.map" />
+    <Content Include="Views\ULogin\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -834,7 +837,16 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PE.BusinessLogic\PE.BusinessLogic.csproj">
+      <Project>{91d28904-df9e-40bc-a675-044f94ce0a26}</Project>
+      <Name>PE.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PE.Domain\PE.Domain.csproj">
+      <Project>{8aa301d2-cf49-4e1e-a605-18416a3409fa}</Project>
+      <Name>PE.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
