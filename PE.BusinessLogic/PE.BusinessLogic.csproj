@@ -51,8 +51,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessLogic.cs" />
+    <Compile Include="Core\AdminApi.cs" />
+    <Compile Include="Core\UserApi.cs" />
     <Compile Include="DBModel\MyDbContext.cs" />
+    <Compile Include="DBModel\MyDbContextInitializer.cs" />
+    <Compile Include="Interfaces\ISession.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SessionBL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PE.Domain\PE.Domain.csproj">
@@ -64,10 +70,7 @@
       <Name>PE.Helpers</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Core\" />
-    <Folder Include="Interfaces\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />

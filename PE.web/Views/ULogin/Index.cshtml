@@ -4,10 +4,11 @@
     ViewBag.Title = "Login";
 }
 
-@model PE.web.Models.UserLogin
+@using PE.Domain.Entities.User
 @using System.Web.Optimization
 
-<!-- Start breadcrumb Area -->
+
+@* Start breadcrumb Area *@
 <div class="rbt-breadcrumb-default ptb--100 ptb_md--50 ptb_sm--30 bg-gradient-1">
     <div class="container">
         <div class="row">
@@ -26,13 +27,13 @@
         </div>
     </div>
 </div>
-<!-- End Breadcrumb Area -->
+@* End Breadcrumb Area *@
 
 <div class="rbt-elements-area bg-color-white rbt-section-gap">
     <div class="container">
         <div class="row gy-5 row--30">
 
-            <div class="col-lg-6">
+      @*      <div class="col-lg-6">
                 <div class="rbt-contact-form contact-form-style-1 max-width-auto">
                     <h3 class="title">Login</h3>
                     <form class="max-width-auto">
@@ -72,7 +73,7 @@
                         </div>
                     </form>
                 </div>
-            </div>
+            </div>*@
 
             <div class="col-lg-6">
                 <div class="rbt-contact-form contact-form-style-1 max-width-auto">

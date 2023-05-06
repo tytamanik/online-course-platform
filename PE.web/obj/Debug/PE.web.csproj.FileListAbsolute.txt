@@ -62,6 +62,8 @@ D:\Projects\Project_Principale\ProiectDeCursTW\PE\PE.web\bin\System.Web.Optimiza
 D:\Projects\Project_Principale\ProiectDeCursTW\PE\PE.web\bin\WebGrease.dll
 D:\Projects\Project_Principale\ProiectDeCursTW\PE\PE.web\bin\Antlr3.Runtime.pdb
 D:\Projects\Project_Principale\ProiectDeCursTW\PE\PE.web\bin\System.Web.Optimization.xml
+C:\Users\user\Documents\GitHub\online-course-platform\PE.web\obj\Debug\PE.web.csproj.AssemblyReference.cache
+C:\Users\user\Documents\GitHub\online-course-platform\PE.web\obj\Debug\PE.web.csproj.CoreCompileInputs.cache
 C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\PE.web.dll.config
 C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\PE.web.dll
 C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\PE.web.pdb
@@ -101,6 +103,8 @@ C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\EntityFramework
 C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\Newtonsoft.Json.dll
+C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\PE.BusinessLogic.dll
+C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\PE.Domain.dll
 C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\System.Web.Helpers.dll
 C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\System.Web.Mvc.dll
 C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\System.Web.Optimization.dll
@@ -109,6 +113,10 @@ C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\System.Web.Webp
 C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\System.Web.Webpages.dll
 C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\System.Web.Webpages.Razor.dll
 C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\WebGrease.dll
+C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\PE.BusinessLogic.pdb
+C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\PE.BusinessLogic.dll.config
+C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\PE.Domain.pdb
+C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\PE.Domain.dll.config
 C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\Antlr3.Runtime.pdb
 C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\EntityFramework.xml
 C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\EntityFramework.SqlServer.xml
@@ -121,13 +129,6 @@ C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\System.Web.Webp
 C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\System.Web.Webpages.Razor.xml
 C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\System.Web.Helpers.xml
 C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\System.Web.Mvc.xml
-C:\Users\user\Documents\GitHub\online-course-platform\PE.web\obj\Debug\PE.web.csproj.AssemblyReference.cache
-C:\Users\user\Documents\GitHub\online-course-platform\PE.web\obj\Debug\PE.web.csproj.CoreCompileInputs.cache
 C:\Users\user\Documents\GitHub\online-course-platform\PE.web\obj\Debug\PE.web.csproj.CopyComplete
 C:\Users\user\Documents\GitHub\online-course-platform\PE.web\obj\Debug\PE.web.dll
 C:\Users\user\Documents\GitHub\online-course-platform\PE.web\obj\Debug\PE.web.pdb
-C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\PE.BusinessLogic.dll
-C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\PE.Domain.dll
-C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\PE.BusinessLogic.pdb
-C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\PE.Domain.pdb
-C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\PE.BusinessLogic.dll.config

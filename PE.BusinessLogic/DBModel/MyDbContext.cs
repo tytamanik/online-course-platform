@@ -10,6 +10,14 @@ namespace PE.BusinessLogic.DBModel
 {
     public class MyDbContext : DbContext
     {
-        public DbSet<User> Users { get; set; }
+        public MyDbContext() : 
+            base("name=CoursePlat")
+        { 
+        }
+        public MyDbContext(string connectionString)
+        {
+            Database.Connection.ConnectionString = connectionString;
+        }
+        public virtual DbSet<userDbTable> Users { get; set; }
     }
 }

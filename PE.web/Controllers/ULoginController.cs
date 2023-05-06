@@ -6,43 +6,75 @@ using System.Web;
 using System.Web.Mvc;
 using System.Data.SqlClient;
 using PE.web.Models;
+using PE.Domain.Entities.User;
 
 namespace PE.web.Controllers
 {
     public class ULoginController : Controller
     {
-        SqlConnection con = new SqlConnection();
-        SqlCommand com = new SqlCommand();
-        SqlDataReader dr;
         // GET: 
         [HttpGet]
         public ActionResult Index()
         {
+            using (MyDbContext db = new MyDbContext())
+            {
+                return View(db.Users.ToList());
+            }
+        }
+
+        public ActionResult Register() 
+        {
             return View();
         }
-
-        void connectionString()
+        [HttpPost]
+        public ActionResult Register(userDbTable user)
         {
-            con.ConnectionString = "data source=WIN-QJ63609DU36; database=PlatEd; integrated security = SSPI "
+            if (ModelState.IsValid)
+            {
+                using (MyDbContext db = new MyDbContext())
+                {
+                    db.Users.Add(user);
+                    db.SaveChanges();
+                }
+                ModelState.Clear();
+                ViewBag.Message = user.FirstName + " " + user.LastName + "Registration is successful.";
+            }
+            return View();
         }
-
-        public ActionResult Verify(UserLogin log)
+        //Login
+        public ActionResult Login()
         {
-            connectionString();
-            con.Open();
-            com.Connection = con;
-            com.CommandText = "select * from";
-            dr = com.ExecuteReader();
-            if(dr.Read())
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Login(userDbTable user)
+        {
+            using (MyDbContext db = new MyDbContext())
+            {
+                var usr = db.Users.Single(u => u.Username == user.Username && u.Password == user.Password);
+                if (usr != null)
+                {
+                    Session["UserID"] = usr.Id.ToString();
+                    Session["Usename"] = usr.Username.ToString();
+                    return RedirectToAction("Home");
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Username or Password is wrong");
+                }
+            }
+            return View();
+        }
+        public ActionResult LoggedIn()
+        {
+            if (Session["UserId"] != null)
             {
                 return View();
             }
-            else 
+            else
             {
-                return View();
+                return RedirectToAction("Login");
             }
-            con.Close();    
-            return View();
         }
     }
 }

@@ -828,6 +828,9 @@
     <Content Include="Scripts\jquery-3.6.3.slim.min.map" />
     <Content Include="Scripts\jquery-3.6.3.min.map" />
     <Content Include="Views\ULogin\Index.cshtml" />
+    <Content Include="Views\ULogin\Register.cshtml" />
+    <Content Include="Views\ULogin\Login.cshtml" />
+    <Content Include="Views\ULogin\LoggedIn.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
