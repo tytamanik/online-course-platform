@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-using System.Web.Optimization;
-using PE.BusinessLogic;
-using PE.BusinessLogic.Core;
+﻿using System.Web.Mvc;
 using PE.BusinessLogic.Interfaces;
 
 namespace PE.web.Content
@@ -21,14 +14,6 @@ namespace PE.web.Content
 
         }
         public ActionResult Index()
-        {
-            return View();
-        }
-        public ActionResult Instructor()
-        {
-            return View();
-        }
-        public ActionResult Student()
         {
             return View();
         }

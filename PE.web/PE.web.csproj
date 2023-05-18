@@ -182,6 +182,7 @@
     <Content Include="Content\assets\images\bg\bg-image-7.jpg" />
     <Content Include="Content\assets\images\bg\bg-image-8.jpg" />
     <Content Include="Content\assets\images\bg\bg-image-9.jpg" />
+    <Content Include="Content\assets\images\bg\bl.jpg" />
     <Content Include="Content\assets\images\bg\top-banner.png" />
     <Content Include="Content\assets\images\blog\blog-bl-02.jpg" />
     <Content Include="Content\assets\images\blog\blog-card-01.jpg" />
@@ -814,12 +815,16 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CourseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InstructorController.cs" />
     <Compile Include="Controllers\ULoginController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\UserLogin.cs" />
+    <Compile Include="Models\userLogin.cs" />
+    <Compile Include="Models\userRegistration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -827,10 +832,11 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.6.3.slim.min.map" />
     <Content Include="Scripts\jquery-3.6.3.min.map" />
-    <Content Include="Views\ULogin\Index.cshtml" />
     <Content Include="Views\ULogin\Register.cshtml" />
     <Content Include="Views\ULogin\Login.cshtml" />
-    <Content Include="Views\ULogin\LoggedIn.cshtml" />
+    <Content Include="Views\User\Index.cshtml" />
+    <Content Include="Views\Course\Index.cshtml" />
+    <Content Include="Views\Instructor\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

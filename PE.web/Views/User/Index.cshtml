@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model List<PE.Domain.Entities.User.userDbTable>
+
+<h1>Users</h1>
+@foreach (var user in Model)
+{
+    <tr>
+        <td>@user.Username</td>
+        <td>@user.Email</td>
+    </tr>
+}

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Data.Entity;
-using System.Threading.Tasks;
 using PE.Domain.Entities.User;
 
 namespace PE.BusinessLogic.DBModel
@@ -15,9 +14,7 @@ namespace PE.BusinessLogic.DBModel
         { 
         }
         public MyDbContext(string connectionString)
-        {
-            Database.Connection.ConnectionString = connectionString;
-        }
-        public virtual DbSet<userDbTable> Users { get; set; }
+            : base(connectionString) { }
+        public DbSet<userDbTable> Users { get; set; }
     }
 }

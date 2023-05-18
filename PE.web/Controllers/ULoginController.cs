@@ -1,45 +1,39 @@
 ﻿using PE.BusinessLogic.DBModel;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using System.Data.SqlClient;
 using PE.web.Models;
 using PE.Domain.Entities.User;
+using PE.BusinessLogic;
 
 namespace PE.web.Controllers
 {
     public class ULoginController : Controller
     {
+        private readonly BusinessLogic.BusinessLogic _businessLogic;
+        public ULoginController()
+        {
+            _businessLogic = new BusinessLogic.BusinessLogic();
+        }
         // GET: 
         [HttpGet]
-        public ActionResult Index()
-        {
-            using (MyDbContext db = new MyDbContext())
-            {
-                return View(db.Users.ToList());
-            }
-        }
 
         public ActionResult Register() 
         {
             return View();
         }
         [HttpPost]
-        public ActionResult Register(userDbTable user)
+        public ActionResult Register(userRegistration model)
         {
             if (ModelState.IsValid)
             {
-                using (MyDbContext db = new MyDbContext())
-                {
-                    db.Users.Add(user);
-                    db.SaveChanges();
-                }
+               /* var _businessLogic = new BusinessLogic.BusinessLogic();*/
+                var user = new userDbTable { LastName = model.LastName, FirstName = model.FirstName, Username = model.Username, Email = model.Email, Password = model.Password };
+                _businessLogic.AddUser(user);
                 ModelState.Clear();
                 ViewBag.Message = user.FirstName + " " + user.LastName + "Registration is successful.";
+                return RedirectToAction("Index", "Home");
             }
-            return View();
+            return View(model);
         }
         //Login
         public ActionResult Login()
@@ -47,34 +41,20 @@ namespace PE.web.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Login(userDbTable user)
+        public ActionResult Login(userLogin model)
         {
-            using (MyDbContext db = new MyDbContext())
-            {
-                var usr = db.Users.Single(u => u.Username == user.Username && u.Password == user.Password);
-                if (usr != null)
+            var user = _businessLogic.GetUserByUsermane(model.Username);
+                if (user != null)
                 {
-                    Session["UserID"] = usr.Id.ToString();
-                    Session["Usename"] = usr.Username.ToString();
-                    return RedirectToAction("Home");
+                    Session["UserID"] = user.Id.ToString();
+                    Session["Usename"] = user.Username.ToString();
+                    return RedirectToAction("Index", "Home");
                 }
                 else
                 {
-                    ModelState.AddModelError("", "Username or Password is wrong");
-                }
+                ModelState.AddModelError("", "Username or Password is wrong");
             }
-            return View();
-        }
-        public ActionResult LoggedIn()
-        {
-            if (Session["UserId"] != null)
-            {
-                return View();
-            }
-            else
-            {
-                return RedirectToAction("Login");
-            }
+            return View(model);
         }
     }
 }

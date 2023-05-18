@@ -62,8 +62,6 @@ D:\Projects\Project_Principale\ProiectDeCursTW\PE\PE.web\bin\System.Web.Optimiza
 D:\Projects\Project_Principale\ProiectDeCursTW\PE\PE.web\bin\WebGrease.dll
 D:\Projects\Project_Principale\ProiectDeCursTW\PE\PE.web\bin\Antlr3.Runtime.pdb
 D:\Projects\Project_Principale\ProiectDeCursTW\PE\PE.web\bin\System.Web.Optimization.xml
-C:\Users\user\Documents\GitHub\online-course-platform\PE.web\obj\Debug\PE.web.csproj.AssemblyReference.cache
-C:\Users\user\Documents\GitHub\online-course-platform\PE.web\obj\Debug\PE.web.csproj.CoreCompileInputs.cache
 C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\PE.web.dll.config
 C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\PE.web.dll
 C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\PE.web.pdb
@@ -129,6 +127,8 @@ C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\System.Web.Webp
 C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\System.Web.Webpages.Razor.xml
 C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\System.Web.Helpers.xml
 C:\Users\user\Documents\GitHub\online-course-platform\PE.web\bin\System.Web.Mvc.xml
+C:\Users\user\Documents\GitHub\online-course-platform\PE.web\obj\Debug\PE.web.csproj.AssemblyReference.cache
+C:\Users\user\Documents\GitHub\online-course-platform\PE.web\obj\Debug\PE.web.csproj.CoreCompileInputs.cache
 C:\Users\user\Documents\GitHub\online-course-platform\PE.web\obj\Debug\PE.web.csproj.CopyComplete
 C:\Users\user\Documents\GitHub\online-course-platform\PE.web\obj\Debug\PE.web.dll
 C:\Users\user\Documents\GitHub\online-course-platform\PE.web\obj\Debug\PE.web.pdb

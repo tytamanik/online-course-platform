@@ -889,7 +889,14 @@
                                             <img src="/Content/assets/images/team/avatar.jpg" alt="User Images">
                                         </div>
                                         <div class="admin-info">
-                                            <span class="name">Nipa Bali</span>
+                                            @if (Session["Username"] != null)
+                                            {
+                                                <span class="name">@Session["Username"].ToString()</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="name">Not Logged</span>
+                                            }
                                             <a class="rbt-btn-link color-primary" href="profile.html">View Profile</a>
                                         </div>
                                     </div>
@@ -980,7 +987,14 @@
                                             <img src="/Content/assets/images/team/avatar.jpg" alt="User Images">
                                         </div>
                                         <div class="admin-info">
-                                            <span class="name">Nipa Bali</span>
+                                            @if (Session["Username"] != null)
+                                            {
+                                                <span class="name">@Session["Username"].ToString()</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="name">Not Logged</span>
+                                            }
                                             <a class="rbt-btn-link color-primary" href="profile.html">View Profile</a>
                                         </div>
                                     </div>
@@ -1065,7 +1079,7 @@
                     </ul>
 
                     <div class="rbt-btn-wrapper d-none d-xl-block">
-                        <a class="rbt-btn rbt-marquee-btn marquee-auto btn-border-gradient radius-round btn-sm hover-transform-none" href="#">
+                        <a class="rbt-btn rbt-marquee-btn marquee-auto btn-border-gradient radius-round btn-sm hover-transform-none" href=@Url.Action("Login", "ULogin")>
                             <span data-text="Enroll Now">Enroll Now</span>
                         </a>
                     </div>
