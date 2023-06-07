@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PE.web.App_Start;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -14,10 +15,16 @@ namespace PE.web.Controllers
             _businessLogic = new BusinessLogic.BusinessLogic();
         }
         // GET: User
+        [AdminMode]
         public ActionResult Index()
         {
             var users = _businessLogic.GetUsers();
             return View(users);
+        }
+        [Authorize]
+        public ActionResult UserDashboard()
+        {
+            return View();
         }
     }
 }

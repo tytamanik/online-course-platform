@@ -1,5 +1,6 @@
 ﻿using PE.BusinessLogic.DBModel;
 using PE.BusinessLogic.Interfaces;
+using PE.Domain.Entities.Course;
 using PE.Domain.Entities.User;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,6 +31,11 @@ namespace PE.BusinessLogic
         public List<userDbTable> GetUsers() 
         {
             return _dbcontext.Users.ToList();
+        }
+        public void AddCourse(courseDbTable course)
+        {
+            _dbcontext.Courses.Add(course);
+            _dbcontext.SaveChanges();
         }
     }
 }

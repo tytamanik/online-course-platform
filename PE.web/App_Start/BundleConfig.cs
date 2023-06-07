@@ -11,18 +11,21 @@ namespace PE.web.App_Start
         {
             // Bootstrap
 
-            bundles.Add(new ScriptBundle("~/bundles/bootstrap/css").Include(
-                        "~/Scripts/bootstrap.min.css"));
+            bundles.Add(new Bundle("~/bundles/bootstrap").Include(
+                        "~/Scripts/bootstrap.js"));
 
             // jQuery
 
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                       "~/Scripts/jquery-{version}.js"));
+                       "~/Scripts/jquery-3.6.3.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
+                     "~/Content/assets/js/vendor/jquery.js"));
 
             // jQuery validation
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
-                        "~/Scripts/jquery.validate*"));
+                        "~/Scripts/jquery.validate.js"));
             // Bootstrap CSS
 
             bundles.Add(new StyleBundle("~/bundles/css").Include(
@@ -31,8 +34,12 @@ namespace PE.web.App_Start
             
             // Font Awesome icons style
 
-            bundles.Add(new StyleBundle("~/bundle/font-awesome/css").Include(
-                      "~/Content/font-awesome.min.css"));
+            bundles.Add(new Bundle("~/bundle/fontawesome").Include(
+                      "~/Content/assets/css/plugins/fontawesome.min.css"));
+
+            bundles.Add(new Bundle("~/bundle/fontawesome").Include(
+                     "~/Scripts/fontawesome/fontawesome.js"));
+
 
             //Modernizr
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(

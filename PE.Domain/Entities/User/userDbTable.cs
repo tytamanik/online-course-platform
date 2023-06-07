@@ -18,13 +18,9 @@ namespace PE.Domain.Entities.User
         public int Id { get; set; }
         public URoles Role { get; set; } = URoles.user;
         public string LastName { get; set; }
-        [Required(ErrorMessage = "First Name is required.")]
         public string FirstName { get; set; }
-        [Required(ErrorMessage = "Usename is required.")]
         public string Username { get; set; }
-        [Required(ErrorMessage = "Password is required.")]
         public string Password { get; set; }
-        [Required(ErrorMessage = "Password confirmation is required.")]
         public string Email { get; set; }
         public bool isBanned;
         public List<courseDbTable> PurchasedCourses { get; set; }
