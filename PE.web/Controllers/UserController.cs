@@ -1,30 +1,26 @@
-﻿using PE.web.App_Start;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using PE.Domain.Entities.User;
+using PE.web.App_Start;
 using System.Web.Mvc;
 
 namespace PE.web.Controllers
 {
-    public class UserController : Controller
+    public class UserController : BaseController
     {
-        private readonly BusinessLogic.BusinessLogic _businessLogic;
-        public UserController()
-        {
-            _businessLogic = new BusinessLogic.BusinessLogic();
-        }
         // GET: User
-        [AdminMode]
         public ActionResult Index()
         {
             var users = _businessLogic.GetUsers();
             return View(users);
         }
-        [Authorize]
         public ActionResult UserDashboard()
         {
             return View();
+        }
+        [HttpPost]
+        public ActionResult RemoveUser(int id)
+        { 
+            _businessLogic.RemoveUserbyId(id);
+            return RedirectToAction("Index");
         }
     }
 }
