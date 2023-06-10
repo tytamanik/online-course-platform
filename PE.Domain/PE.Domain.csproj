@@ -51,8 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\Course\courseDbTable.cs" />
-    <Compile Include="Entities\User\userDbTable.cs" />
+    <Compile Include="Entities\adminDbTable.cs" />
+    <Compile Include="Entities\categoryDbTable.cs" />
+    <Compile Include="Entities\courseDbTable.cs" />
+    <Compile Include="Entities\instructorDbTable.cs" />
+    <Compile Include="Entities\useDbTableCourseDbTable.cs" />
+    <Compile Include="Entities\userDbTable.cs" />
     <Compile Include="Enums\Roles.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
