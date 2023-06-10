@@ -49,19 +49,15 @@ namespace PE.BusinessLogic
         {
             return _dbcontext.Courses.Find(id);
         }
-        	public userDbTable GetUserById(int? id)
-        {
-            return _dbcontext.Users.Find(id);
-        }
-	    public List<courseDbTable> GetPurchasedCoursesByUserId(int id)
+
+	public List<courseDbTable> GetPurchasedCoursesByUserId(int id)
         {
             var userCourseIds = _dbcontext.UserCourses.Where(u => u.User == id).Select(u => u.Course).ToList();
             var purchasedCourses = _dbcontext.Courses.Where(c => userCourseIds.Contains(c.Id)).ToList();
 
             return purchasedCourses;
-
         }
-	    public void AddCourseToUser(int userId, courseDbTable course)
+	public void AddCourseToUser(int userId, courseDbTable course)
         {
             _dbcontext.Courses.Add(course);
             _dbcontext.SaveChanges();
