@@ -1,19 +1,12 @@
-﻿using System.Web.Mvc;
-using PE.BusinessLogic.Interfaces;
+﻿using PE.web.Models;
+using PE.Domain.Entities.User;
+using System.Web.Mvc;
 
-namespace PE.web.Content
+namespace PE.web.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
-        private readonly ISession _session;
-        // GET: Home
-        public HomeController()
-        {
-            var bl = new BusinessLogic.BusinessLogic();
-            _session = bl.GetSessionBL();
-
-        }
-        public ActionResult Index()
+        public ActionResult Index(userDbTable user)
         {
             return View();
         }
