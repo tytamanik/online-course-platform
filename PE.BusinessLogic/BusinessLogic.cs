@@ -3,6 +3,7 @@ using PE.BusinessLogic.DBModel;
 using PE.BusinessLogic.Interfaces;
 using PE.Domain.Entities.Course;
 using PE.Domain.Entities.User;
+using PE.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
